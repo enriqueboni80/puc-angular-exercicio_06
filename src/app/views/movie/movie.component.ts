@@ -20,12 +20,12 @@ export class MovieComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getMovies();
+    this.getPopularMovies();
   }
 
   // Chama o serviço para obtém todos os Filmes
-  getMovies() {
-    this.movieService.getMovies().subscribe((movies: IMovieResults) => {
+  getPopularMovies() {
+    this.movieService.getPopularMovies().subscribe((movies: IMovieResults) => {
       this.movies = movies.results;
       this.filteredMovies = movies.results
       /* this.moviesStore.setMovies(movies.results) */

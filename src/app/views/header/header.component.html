@@ -1,1 +1,5 @@
-<p>header works!</p>
+<mat-card-content style="text-align: center; margin-bottom: 70px;">
+    <label for="site-search">Search the site: </label>
+    <input [(ngModel)]="moviesFilter" (ngModelChange)="onMoviesFilter($event)" name="moviesFilter" type="text"
+        placeholder="Buscar filmes...">
+</mat-card-content>

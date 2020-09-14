@@ -15,6 +15,7 @@ import { MovieItemComponent } from './views/movie/movie-item/movie-item.componen
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './views/header/header.component';
+import { MovieDetailComponent } from './views/movie/movie-detail/movie-detail.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HeaderComponent } from './views/header/header.component';
     MovieComponent,
     MovieItemComponent,
     HeaderComponent,
+    MovieDetailComponent,
   ],
   imports: [
     BrowserModule,
