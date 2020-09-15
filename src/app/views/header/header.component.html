@@ -1,7 +1,23 @@
 <mat-card-content style="text-align: center; margin-bottom: 70px;">
-    <label for="site-search">Search the site: </label><br />
-    <input [(ngModel)]="moviesFilter" (ngModelChange)="onMoviesFilter($event)" name="moviesFilter" type="text"
-        placeholder="Buscar filmes..."><br/>
-    <button (click)="onOrderBy('vote_count')">Order por Votos</button>
-    <button (click)="onOrderBy('popularity')">Order por Popularidade</button>
+    <mat-form-field class="example-full-width" style="text-align:center">
+        <mat-label>Search Movie</mat-label>
+        <input matInput  [(ngModel)]="moviesFilter" (ngModelChange)="onMoviesFilter($event)" name="moviesFilter" type="text"
+        placeholder="...">
+    </mat-form-field>
+    <div>
+    <a href="#" (click)="onOrderBy('vote_count')">Order by votes</a>
+    </div>
+    <div>
+    <a href="#" (click)="onOrderBy('popularity')">Order by popularity</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
 </mat-card-content>

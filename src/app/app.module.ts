@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -30,6 +32,8 @@ import { MovieDetailComponent } from './views/movie/movie-detail/movie-detail.co
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
+    MatInputModule,
+    MatMenuModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     HttpClientModule,
