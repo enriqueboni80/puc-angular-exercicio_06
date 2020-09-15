@@ -9,7 +9,7 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 export class HeaderComponent {
   moviesFilter = '';
   @Output() filterMovies = new EventEmitter<string>();
-  @Output() orderBy = new EventEmitter<void>();
+  @Output() orderBy = new EventEmitter<string>();
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class HeaderComponent {
     this.filterMovies.emit(value);
   }
 
-  onOrderBy(): void {
-    this.orderBy.emit()
+  onOrderBy(orderField: string): void {
+    this.orderBy.emit(orderField)
   }
 }

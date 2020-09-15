@@ -36,9 +36,10 @@ export class MovieComponent implements OnInit {
     this.filteredMovies = this.movies.filter(movie => movie.title.toLowerCase().includes(valueFilter.toLowerCase()))
   }
 
-  onOrderBy(): void {
-    this.filteredMovies.sort((a, b)=>{
-        return b.vote_count - a.vote_count
+  onOrderBy(orderField: string): void {
+    console.log(this.filteredMovies);
+    this.filteredMovies.sort((a, b) => {
+      return b[orderField] - a[orderField]
     })
   }
 

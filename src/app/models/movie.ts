@@ -5,6 +5,7 @@ export interface IMovie {
     original_title: string
     overview: string
     vote_count: number
+    popularity: number
     
 }
 

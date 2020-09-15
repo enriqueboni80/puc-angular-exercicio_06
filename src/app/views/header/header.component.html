@@ -2,5 +2,6 @@
     <label for="site-search">Search the site: </label><br />
     <input [(ngModel)]="moviesFilter" (ngModelChange)="onMoviesFilter($event)" name="moviesFilter" type="text"
         placeholder="Buscar filmes..."><br/>
-    <button (click)="onOrderBy()">Click me!</button>
+    <button (click)="onOrderBy('vote_count')">Order por Votos</button>
+    <button (click)="onOrderBy('popularity')">Order por Popularidade</button>
 </mat-card-content>
