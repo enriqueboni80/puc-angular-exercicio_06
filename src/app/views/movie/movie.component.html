@@ -1,4 +1,4 @@
-<app-header (filterMovies)="onMoviesFilter($event)"></app-header>
+<app-header (filterMovies)="onMoviesFilter($event)" (orderBy)="onOrderBy()"></app-header>
 <mat-card-content>
     <div fxLayout="row wrap" fxLayoutAlign="start center">
         <ng-container styles *ngFor='let movie of filteredMovies'>
