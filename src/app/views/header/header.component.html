@@ -1,13 +1,26 @@
-<mat-card-content style="text-align: center; margin-bottom: 70px;">
-    <mat-form-field class="example-full-width" style="text-align:center">
-        <mat-label>Search Movie</mat-label>
-        <input matInput  [(ngModel)]="moviesFilter" (ngModelChange)="onMoviesFilter($event)" name="moviesFilter" type="text"
-        placeholder="...">
-    </mat-form-field>
-    <div>
-    <a href="#" (click)="onOrderBy('vote_count')">Order by votes</a>
-    </div>
-    <div>
-    <a href="#" (click)="onOrderBy('popularity')">Order by popularity</a>
-    </div>
-</mat-card-content>
+<!-- Início do header -->
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Enrique Movies</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/']">Home</a>
+                        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">About</a> -->
+                        <a class="nav-link" [routerLink]="['/about']">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+
+        
+      </nav>
+</header>
+<!-- Fim do header -->
+
+

@@ -1,0 +1,20 @@
+.search-bar {
+    text-align: right;
+    margin-right: 60px
+}
+
+mat-form-field {
+    width: 31%;
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        text-align: center;
+        margin-right: 0px
+    }
+
+    mat-form-field {
+        width: 70%;
+    }
+
+  }

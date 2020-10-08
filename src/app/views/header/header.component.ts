@@ -1,5 +1,5 @@
 
-import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,17 +7,9 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  moviesFilter = '';
-  @Output() filterMovies = new EventEmitter<string>();
-  @Output() orderBy = new EventEmitter<string>();
+
 
   constructor() { }
 
-  onMoviesFilter(value: string): void {
-    this.filterMovies.emit(value);
-  }
 
-  onOrderBy(orderField: string): void {
-    this.orderBy.emit(orderField)
-  }
 }

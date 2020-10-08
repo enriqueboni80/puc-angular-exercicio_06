@@ -1,8 +1,9 @@
-<app-header (filterMovies)="onMoviesFilter($event)" (orderBy)="onOrderBy($event)"></app-header>
+<app-search-bar (filterMovies)="onMoviesFilter($event)" (orderBy)="onOrderBy($event)"></app-search-bar>
 <mat-card-content>
     <div fxLayout="row wrap" fxLayoutAlign="start center">
         <ng-container styles *ngFor='let movie of filteredMovies'>
-            <app-movie-item style="padding:20px" class="mat-card-live" fxFlex="0 1 calc(33.3% - 11px)" [movie]=movie [urlImgs]>
+            <app-movie-item style="padding:20px" class="mat-card-live" fxFlex.gt-xs="0 1 calc(33.3% - 11px)" [movie]=movie
+                [urlImgs]>
             </app-movie-item>
         </ng-container>
     </div>
